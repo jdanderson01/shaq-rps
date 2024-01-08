@@ -36,11 +36,15 @@ const checkWinner = (playerScore, shaqScore) => {
     document.querySelector(
       ".playerScore"
     ).textContent = `You beat The Big Diesel ${playerScore} to ${shaqScore}!`;
+    //get rid of shaq score
+    document.querySelector(".shaqScore").textContent = "";
     endGame();
   } else if (shaqScore === 5) {
     document.querySelector(
       ".shaqScore"
     ).textContent = `The Big Diesel defeated you ${shaqScore} to ${playerScore}!`;
+    //get rid of player score
+    document.querySelector(".playerScore").textContent = "";
     endGame();
   }
 };

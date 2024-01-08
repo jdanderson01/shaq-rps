@@ -24,46 +24,47 @@ body {
 }
 
 .btnAgain {
-  background-color: #ffee00e7;
-  border-radius: 2px;
-  border: 2px solid rgb(127, 52, 197);
+  background-color: rgba(255, 238, 0, 0.7);
+  border-radius: 1rem;
   color: black;index
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 2rem;
 }
 
-.btnRock {
-  max-width: 20%;
+.btnRock, .btnPaper, .btnScissors {
+  max-width: 10%;
   height: auto;
 }
 
-.btnPaper {
-  max-width: 20%;
-  height: auto;
-}
-
-.btnScissors {
-  max-width: 20%;
-  height: auto;
+.scores-container {
+  display: flex;
+  justify-content: center;
+  align-itmes: center;
+  margin: 1rem 1rem;
+  gap: 4rem;
 }
 
 .playerScore,
 .shaqScore {
-  display: flex;
-  font-size: 25px;
-  position: relative;
-  top: 50px;
-}
-
-.playerScore {
-  color: #ffee00e7;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 0 0 10px rgba(128, 0, 128, 0.7);
 }
 
 .shaqScore {
-  color: #fff;
+  text-shadow: 0 0 10px rgba(128, 0, 128, 0.7);
+}
+
+.playerScore {
+  text-shadow: 0 0 10px rgba(255, 223, 0, 0.7);
+}
+
+.result-text {
+  color: white;
+  font-size: 2rem
 }
 
 @media (max-width: 767px) {
